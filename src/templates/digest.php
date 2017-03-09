@@ -121,13 +121,13 @@
                 <span class="preheader" style="color: transparent; display: none; height: 0; max-height: 0; max-width: 0; opacity: 0; overflow: hidden; mso-hide: all; visibility: hidden; width: 0;">
                     <?php if($today): ?>
                         <?php foreach ($today as $k => $task):?>
-                            <?=$k;?>: <?=$this->e($task->title); ?>
+                            <?=$k+1;?>: <?=$this->e($task->title); ?>
                         <?php endforeach;?>
                     <?php endif; ?>
 
                     <?php if($overdue): ?>
                         <?php foreach ($overdue as $k => $task):?>
-                            <?=$k;?>: <?=$this->e($task->title); ?>
+                            <?=$k+1;?>: <?=$this->e($task->title); ?>
                         <?php endforeach;?>
                     <?php endif; ?>
                 </span>
